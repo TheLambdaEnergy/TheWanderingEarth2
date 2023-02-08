@@ -1,0 +1,78 @@
+@charset "UTF-8";
+*{
+    margin:0;
+    padding:0;
+}
+@font-face {
+    font-family: 'nerdfonticon';
+    src: url("font/ProFontWindows Nerd Font Complete.ttf");
+}
+.terminal{
+    font-family:nerdfonticon;
+    font-size:20px;
+    color:#ffffff;
+    background:#0a0a0a;
+
+}
+.logger{
+    background:#000;
+    font-family:nerdfonticon;
+}
+.window_title{
+    font-family:'Determination Sans';
+    font-size:25px;
+    color:#00eaff;
+    background:#ff6a00;
+    text-align:center;
+    height:30px;
+}
+.buttons{
+    height:26px;
+    width:auto;
+    margin:2px;
+    transition:all .15s;
+    -webkit-transition:all .15s;
+}
+.b_window{
+    color:#FFFFFF;
+    background:#ff6a00;
+    border-color:#ffffff;
+    border-radius:0px;
+    border-width:0px;
+}
+b_window::before{
+    font-family:nerdfonticon;
+    content:'\eab8';
+}
+.b_window:hover{
+    color:#ff6a00;
+    background:#ffffff;
+}
+
+#b_logstart{
+    background:#ff6a00;
+    color:#000;
+    position:absolute;
+    display:block;
+    text-align:center;
+    margin-top:60px;
+}
+#inputpwd{
+    display:none;
+}
+header{
+    font-family:'Lucida Console';
+    font-size:30px;
+    background:#000;
+    color:#FFF;
+    text-align:center;
+}
+a{
+    text-decoration:none;
+}
+code{
+    font-family:nerdfonticon;
+}
+body{
+    background:#000;
+}

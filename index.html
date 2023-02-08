@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+    <meta charset="utf-8" />
+        <title>
+            United Nations Central Control(UNCC)
+        </title>
+        <link href="style.css" rel="stylesheet" />
+        <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"> </script> <!--jQuery-->
+        
+
+    </head>
+
+    <body>
+        <header>THE UNITED NATIONS CENTRAL CONTROL PANEL</header>
+        <div id="panel"> <!--�����-->
+            <div id="we_rs_ctrl" class="terminal"><!--���Ƿ�������������-->
+                
+            </div>
+            <div id="bj_rs_pwd" class="terminal logger">
+                <div class="window_title">
+                    BEIJING ROOT SERVER OF PLANET ENGINE
+                    <button style="float:right" class="buttons b_window nf-cod-chrome_close">CLOSE</button>
+                </div>
+                <div id="control">
+                    <a id="b_logstart" class="buttons" href="javascript:logexec()">START</a>
+                    <a id="b_password" class="buttons" href="#"></a>
+                </div>
+                <div id="inputpwd">
+                    <div class="window_title">手动输入密码</div>
+                    <table>
+
+                    </table>
+                </div>
+                <code id="terminal"></code>
+            </div>
+        </div>
+        <script>
+    console.log("Load Successful.");
+    var logs = [
+        "[INFO]Waiting server response...",
+        "[WARNNIG]No response.",
+        "[INFO]"
+    ];
+    var logstart = $("#b_logstart");
+    var terminal = $("#terminal");
+    console.log(logstart);
+
+    function nowTime() {
+        var now = new Date();
+        return (now.getHours() + ":" + now.getMinutes() + ":" + now.getSeconds());
+    }
+
+    console.log("...");
+    function addlog(string) {
+        setTimeout(terminal.append("<p>" + string + "</p>"),100);
+    }
+
+    function logexec () {
+        console.log("Excuting...");
+        logstart.hide();
+        addlog("--####---####---0000---------W");
+        addlog("-#-------/-----// W *_ W----W");
+        addlog("--555-----55+--0 . W * W---W");
+        addlog("----#=-----=++ 0 .. 0^W-W-W");
+        addlog("HUMAN  ALWAYS +-WIN-+W---W");
+        addlog("\n");
+        addlog("\n");
+        addlog("INTELLIGENT QUANTUM COMPUTER 550W (MOSS)");
+        addlog("Copyright 2012-2077 United Earth Government.");
+
+        addlog("Generating root Opearing System...");
+        /*
+        while (true) {
+            var log = "[" + nowTime() + "]" + text;
+            addlog(log);
+        }*/
+    }
+
+    console.log("JavaScript file finished.");
+</script>
+    </body>
+</html>

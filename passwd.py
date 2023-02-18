@@ -2,11 +2,11 @@ import tkinter as tk
 import tkinter.ttk as ttk
 import time
 
-text2 = '''INFO:root.planetengine.jp
+text2 = '''信息:root.planetengine.jp
 502 Bad Gateway (HTTP 6.1)
 us.root.planetengine.com
 502 Bad Gateway (HTTP 6.1)
-Response unusual data:
+响应了未使用的数据:
 <jntm jnszstm>
 '''
 
@@ -26,7 +26,7 @@ top.config(background="#000000")
 top.attributes('-topmost', True)
 pgval = 96
 
-lb1 = tk.Label(top, text="UEG Server Connection:{}%".format(pgval), fg="#FFFFFF", bg="#000000")
+lb1 = tk.Label(top, text="UEG 服务器连接:{}%".format(pgval), fg="#FFFFFF", bg="#000000")
 lb2 = tk.Label(top, text="Time remaining :3min")
 progressbar = ttk.Progressbar(top, length=550)
 progressbar['maximum'] = 100
@@ -40,7 +40,7 @@ win1.attributes("-toolwindow", True)
 win1.geometry("250x250+100+50")
 win1.title("!   WARNING   !")
 winlb1 = tk.Label(win1, bg="#000000", fg="#F2481B",
-                  text="UEG Message:Lunar debris \nwill drop after 3 minutes.\nPlease let server to connect to\n Global Internet System.",
+                  text="UEG 信息:月球碎片将于\n3分钟后降落.\n请将伺服器连接到\n 全球网络系统.",
                   font=("微软雅黑", 12))
 winlb1.pack(fill="both")
 
@@ -91,7 +91,7 @@ order = 0
 
 
 def complete():
-    lb1.config(text="COMPLETE!")
+    lb1.config(text="完成!")
     for i in range(4):
         progressbar['value'] += 1
         time.sleep(0.03)

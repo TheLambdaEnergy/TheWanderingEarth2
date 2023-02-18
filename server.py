@@ -24,39 +24,39 @@ def addmsg(msg, color="white", wait=0.1):
 print("""
 ====================================================================
  ____  ___   ___
-/     /    / *  0      W THE INTELIGENT QUANTUM COMPUTER
+/     /    / *  0      W       智能量子计算机
 ^==-5 ^== 5|  *   W   W       550W (MOSS)
-     5     0   * W W W   COPYRIGHT 1978-2044 UNITED EARTH GOVERNMENT
+     5     0   * W W W   COPYRIGHT 1978-2077 地球联合政府
 5555  5555  0000W   W
 ====================================================================
-STARTING...
+启动中...
 """)
 
 time.sleep(2)
-addmsg("Found hardware in /dev: (1) Beijing Root Server Terminal")
-addmsg("Generating operating system...")
+addmsg("在 /dev 找到 1 设备: (1) 北京根服务器控制台")
+addmsg("正在生成底层操作系统...")
 time.sleep(4)
 
-addmsg("Connected to DNS server.", color="aqua")
-addmsg("Trying to connect to Tokyo server")
-addmsg("Requested data to root.planetengine.jp", color="aqua", wait=1)
+addmsg("已连接到DNS服务器.", color="aqua")
+addmsg("尝试连接到位于 东京 的服务器:")
+addmsg("正在向 root.planetengine.jp 请求数据", color="aqua", wait=1)
 load = 0
 while load <= 100:
-    addmsg("Retriving server keys... " + str(load) + "%", wait=1)
+    addmsg("检索服务器密钥... " + str(load) + "%", wait=1)
     add = random.randint(1, 15)
     load += add
 
 addmsg("Done.")
 
-addmsg("Trying to connect to Dulles server")
-addmsg("Requested data to us.root.planetengine.com", color="aqua", wait=1)
+addmsg("尝试连接到位于 杜勒斯 的服务器")
+addmsg("正在向 us.root.planetengine.com 请求数据", color="aqua", wait=1)
 load = 0
 while load <= 100:
-    addmsg("Retriving server keys... " + str(load) + "%", wait=1)
+    addmsg("检索服务器密钥... " + str(load) + "%", wait=1)
     add = random.randint(1, 15)
     load += add
 
-addmsg("Done.")
+addmsg("完成.")
 time.sleep(5)
 
 '''
@@ -68,9 +68,9 @@ win = curses.newwin(10,50,0,0)
 '''
 # messagebox.askokcancel("Upload data to 550W?")
 
-addmsg("Now compiling kernel code")
-addmsg("Found compiler <550U basic operating system kernel compiler>", wait=2)
-addmsg("WARNING!Compiler outdated", color="yellow")
+addmsg("开始编译发动机控制程序内核")
+addmsg("命中 <550U basic operating system kernel compiler> 位于 /usr/kernel", wait=2)
+addmsg("WARNING警告!编译程序已过期", color="yellow")
 
 proc = subprocess.Popen(args=["python", "passwd.py"], shell=False, stdout=subprocess.PIPE)
 
@@ -86,9 +86,9 @@ with open("textwrap.txt", "r") as f:
         else:
             addmsg(code, color="aqua", wait=0.05)
 
-addmsg("\n\nCompile Finished!", color="aqua")
-addmsg("Uncaught Error: user <root> password outdated,need to verify", color="red")
-addmsg("Waiting for subprocess password typing...")
+addmsg("\n\n编译完成!", color="aqua")
+addmsg("未知错误: 用户 <root> 密码信息已过期,需要验证", color="red")
+addmsg("等待子进程密码输入...")
 
 while 1:
     try:
@@ -100,10 +100,10 @@ while 1:
             break
     except:
         pass
-addmsg("Subprocess exit code:" + str(proc.poll()))
-addmsg("Successfully to connect to Global Internet!")
-addmsg("GET 1 verified command:ueg_planetengnine_launch")
-addmsg("Launching Planet Engine in Asia-NorthAmerica-6-132", wait=3)
-addmsg("Success!")
+addmsg("子进程结束码:" + str(proc.poll()))
+addmsg("成功连接到全球网络!")
+addmsg("收到 1 个已验证的命令:ueg_planetengnine_launch")
+addmsg("正在启动位于 亚洲-北美洲-6-132 的行星发动机", wait=3)
+addmsg("成功!")
 
-input("Press Enter to exit.")
+input("按下回车退出.")
